@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .heading {
+            display: flex;
+        }
+
+        .ul {
+            display: flex;
+            list-style: none;
+            font-size: large;
+            font-weight: 500;
+        }
+
+        .a:hover {
+            text-decoration: none;
+            color: black;
+        }
+
+        .a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .layer {
+            color: white;
+            width: 100%;
+            height: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), lightgrey);
+            border-radius: 10px;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0 40px;
+            font-size: 14px;
+            transition: height, 0.5s;
+        }
+
+        .layer h3 {
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .layer a {
+            margin-bottom: 20px;
+            color: #ff004f;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 60px;
+            background-color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+
+        }
+
+        .work:hover .layer {
+            height: 100%;
+        }
+
+        .work:hover img {
+            transform: scale(1.1);
+        }
+
+        .submit {
+            transform: scale(1.1);
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+        }
+
+        .social-icons a {
+            display: block;
+            text-decoration: none;
+            margin: 10px;
+            transition: transform, 0.5s;
+        }
+
+        .social-icons a:hover {
+            transform: translateY(-5px)
+                /* transform: scale(1.1); */
+        }
+
+        .form,
+        .first,
+        .second {
+            outline: none;
+
+        }
+
+        .skills:hover {
+            transform: scale(1.1);
+        }
+
+        #msg {
+            color: grey;
+            display: block;
+            margin-top: 40px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container Head">
+            <div class="row heading">
+                <div class="col-md-3 col-sm-12 p-1">
+                    <h1>IMRAN KHAN</h1>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-8 col-sm-12 p-3">
+                    <nav>
+                        <ul class="ul">
+                            <li class="button li "><a class="a " href="#">Home</a></li>
+                            <li class="button li ml-4"><a class="a ml-5" href="#project">Projects</a></li>
+                            <li class="button li ml-4"><a class="a ml-5" href="#skills">Skills</a></li>
+                            <li class="button li ml-4"><a class="a ml-5" href="#about">About</a></li>
+                            <li class="button li ml-4"><a class="a ml-5" href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container main">
+            <div class="row intro">
+                <div class="col-lg-6 col-12 mt-5">
+                    <h2 class="official mt-2">Hello there!</h2>
+                    <h2>I'm <span class="auto-input mt-3"></span></h2>
+                    <h5 class="text-secondary font-weight-normal">This is my official portfolio website to shows <br>all
+                        Details and Work
+                        Experiences</h5>
+                    <br>
+                    <a href="IMRAN's Resume - Copy.pdf" download="Resume.pdf" target="_blank">
+                        <button class="btn-dark p-3 rounded button ">DOWNLOAD CV</button>
+                    </a>
+                    <a href="#project">
+                        <button class="btn-dark p-3 rounded ml-3  button">Portfolio</button>
+                    </a>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4 col-12 ">
+                    <img class="img w-75 mt-3" src="mypic.PNG" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="project">
+            <center>
+                <h3>My Projects</h3>
+            </center>
+            <div class="row work-list mt-3">
+                <div class="col-lg-6 col-12 work">
+                    <img class="img-fluid p-4" src="ColmarAcademy.jpg" alt="">
+                    <div class="layer text-center">
+                        <h3>Colmar Academy</h3>
+                        <p>Mobile-friendly and Responsive website using <br>HTML , CSS and Bootstrap. </p>
+                        <a href="https://imran5963.github.io/Colmar-Academy_project/" target="_blank"><img src="link-solid.svg" alt="" width="45px"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12  work">
+                    <img class="img-fluid p-4" src="ecommerce.png" alt="">
+                    <div class="layer text-center">
+                        <h3>E-commerce website</h3>
+                        <p>Shopping website for clothings and watches </p>
+                        <a href="https://imran5963.github.io/Ecommerce-website/" target="_blank"><img src="link-solid.svg" alt="" width="45px"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row work-list">
+                <div class="col-lg-6 col-12  work">
+                    <img class="img-fluid p-4" src="apni-kaksha.png" alt="">
+                    <div class="layer text-center">
+                        <h3>Apni kaksha</h3>
+                        <p>Replica of Apni kaksha using only HTML and CSS </p>
+                        <a href="https://imran5963.github.io/Apnikaksha/" target="_blank"><img src="link-solid.svg" alt="" width="45px"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12  work">
+                    <img class="img-fluid p-4" src="fast-food.png" alt="">
+                    <div class="layer text-center">
+                        <h3>Fast food</h3>
+                        <p>Food ordering website with added features like <br> games ,stock market etc </p>
+                        <a href="https://imran5963.github.io/fast-foood/" target="_blank"><img src="link-solid.svg" alt="" width="45px"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row work-list">
+                <div class="col-lg-6 col-12  work">
+                    <img class="img-fluid p-4" src="onlinehellgaming.png" alt="">
+                    <div class="layer text-center">
+                        <h3>Online HellGaming</h3>
+                        <p>Online game play website where you <br> can play many online games </p>
+                        <a href="https://imran5963.github.io/hellgaming/" target="_blank"><img src="link-solid.svg" alt="" width="45px"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12  work">
+                    <img class="img-fluid p-4" src="netflic.png" alt="">
+                    <div class="layer text-center">
+                        <h3>Netflix Replica</h3>
+                        <p>Watch exciting new series on any device <br>Use Netflix </p>
+                        <a href="https://imran5963.github.io/Netflix_Replica/" target="_blank"><img src="link-solid.svg" alt="" width="45px"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4" id="skills">
+        <center>
+            <h3>Skills</h3>
+        </center>
+        <div class="row mt-5 ml-5">
+            <div class="col-lg-1 col-6 mt-4 p-5"><a href="" onclick="clicked()"><img class="skills" src="java.png"
+                        alt="" width="100px"></a><img src="" alt=""></div>
+            <div class="col-lg-1 col-6 mt-4 p-5"><a href="" onclick="clicked()"><img class="skills" src="ht.png" alt=""
+                        width="85px"></a></div>
+            <div class="col-lg-1 col-6 mt-4 p-5"><a href="" onclick="clicked()"><img class="skills" src="csss.png"
+                        alt="" width="95px"></a></div>
+            <div class="col-lg-1 col-6 mt-4 p-5"><a href="" onclick="clicked()"><img class="skills"
+                        src="javascript.webp" alt="" width="85px"></a></div>
+            <div class="col-lg-1 col-6 mt-4 p-5"><a href="" onclick="clicked()"><img class="mt-3 skills"
+                        src="bootstrap.png" alt="" width="120px"></a></div>
+            <div class="col-lg-1 col-6 mt-4 p-5"><a href="" onclick="clicked()"><img class="ml-3 skills" src="react.png"
+                        alt="" width="85px"></a></div>
+            <div class="col-lg-1 col-6 mt-4 p-5"><a href="" onclick="clicked()"><img class="ml-3 skills" src="sql.svg"
+                        alt="" width="90px"></a></div>
+            <div class="col-lg-1 col-6 mt-4 p-5"><a href="" onclick="clicked()"><img class="ml-4 skills" src="c++.png"
+                        alt="" width="100px"></a></div>
+            <div class="col-lg-1 col-6 mt-4 p-5"><a href="" onclick="clicked()"><img class="ml-2 skills"
+                        src="github.png" alt="" width="120px"></a></div>
+            <div class="col-lg-1 col-6 mt-4 p-5"><a href="" onclick="clicked()"><img class="ml-4 skills"
+                        src="command.svg" alt="" width="110px"></a></div>
+
+        </div>
+    </div>
+    <div class="container mt-3" id="about">
+        <center>
+            <h3>About</h3>
+        </center>
+        <div class="row mt-5">
+            <div class="col-lg-6 col-12 ">
+                <img class="img-fluid" src="gi.gif" alt="">
+            </div>
+            <div class="col-lg-6 col-12  text-center">
+                <h5>
+                    Welcome to my portfolio website! I am Imran Khan, a self-motivated engineer from Uttar Pradesh,
+                    India
+                    with expertise in software development. I have a proven track record of success in
+                    leading complex projects from conception to completion. My interests lie in Development and AI 
+                    I am seeking a challenging and dynamic role in the engineering industry. My skills include software
+                    development and Front-end-Development and programming in Java , C , C++ ,
+                    and more. I am currently pursuing higher-level professional educational course in Full Stack Java
+                    Development, and I hold a Bachelor’s degree in Computer Science Engineering.
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5" id="contact">
+        <div class="row mt-5">
+            <div class="col-lg-6 col-12">
+                <h2>Contact me </h2>
+                <p class="mt-3"><img src="paper-plane-solid.svg" alt="" width="15px"
+                        class="m-2">helloimrankhan3@gmail.com</p>
+                <p><img src="phone-solid.svg" alt="" width="15px" class="m-2">894-8884-644</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/imran-khan-a9a49316b/" target="_blank"><img src="linkedin.svg"
+                            alt="" width="30px" class="linkedin "></a>
+                    <a href="https://github.com/imran5963?tab=repositories" target="_blank"><img src="github.svg" alt=""
+                            width="30px" class="github "></a><br>
+                    <div>
+                        <a href="IMRAN's Resume - Copy.pdf" download="Resume.pdf" target="_blank">
+                            <button class="btn-dark p-3 rounded button ">DOWNLOAD CV</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-12 form">
+                <form name="submit-to-google-sheet">
+                    <input type="text" placeholder="Name" name="Name" class="mb-3 w-100 p-2 rounded first"><br>
+                    <input type="email" placeholder="Email" name="Email" class="mb-3 w-100 p-2 rounded second"><br>
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"
+                        class="mb-3 w-100 p-2 rounded"></textarea><br>
+                    <input type="submit" value="Submit" class="btn-dark p-1 rounded w-25 button">
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  mt-5 bg-secondary text-center font-weight-normal">
+        <div class="row">
+            <div class="col-12 p-4">
+                <p class="text-white">copyright @ Imran. made with <img class="heart" src="heart-solid.svg" alt=""
+                        width="15px"> love </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Imran Khan", "Software Developer", "Front end Developer", "Back end Developer", "Full Stack Developer"],
+            typedSpeed: 2000,
+            backspeed: 1000,
+            loop: true
+        });
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxMnKLgfdvVLEVqHWNNdCMF-d8qJ_8dvKmo0rA8EJku5anrFzeE9kkND2QGlhfbuZYf/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 4000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
